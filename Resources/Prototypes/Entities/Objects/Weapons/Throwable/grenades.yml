@@ -42,6 +42,20 @@
     - type: TimerTriggerVisualizer
 
 - type: entity
+  name: Syndicate Throwable Grenade
+  description: A anti-personnel grenade that creates a small but devestating explosion.
+  parent: BaseItem
+  id: GrenadePersonnel
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Grenades/personnelgrenade.rsi
+    layers:
+    - state: icon
+      map: ["enum.TriggerVisualLayers.Base"]
+  - type: Item
+    size: 5
+    
+- type: entity
   name: flashbang
   description: Eeeeeeeeeeeeeeeeeeeeee
   parent: BaseItem
