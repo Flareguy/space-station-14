@@ -1,0 +1,238 @@
+#If you want to look for barebones example jumpsuits then you probably shouldn't look here, these use greyscaling to make them more consistent and thus use layers (so that parts like the zipper aren't recolored.)
+
+#BASIC COLORS
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorWhite
+  description: A generic white jumpsuit with no rank markings.
+  name: white jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+      - state: equipped-jumpsuit-trinkets
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorGrey
+  description: A tasteful grey jumpsuit that reminds you of the good old days.
+  name: grey jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    color: "#B3B3B3"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+        color: "#B3B3B3"
+      - state: equipped-jumpsuit-greytideTrinkets #it looks weird without it okay
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorBlack
+  description: A sleek black jumpsuit with no rank markings.
+  name: black jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    color: "#3F3F3F"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+        color: "#3F3F3F"
+      - state: equipped-jumpsuit-greytideTrinkets
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorAquamarine
+  description: A generic aquamarine jumpsuit with no rank markings.
+  name: aquamarine jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    color: "#36D89F"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+        color: "#36D89F"
+      - state: equipped-jumpsuit-trinkets
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorTeal
+  description: A generic teal jumpsuit with no rank markings.
+  name: teal jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    color: "#52AECC"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+        color: "#52AECC"
+      - state: equipped-jumpsuit-trinkets
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorBlue
+  description: A generic blue jumpsuit with no rank markings.
+  name: blue jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    color: "#3285BA"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+        color: "#3285BA"
+      - state: equipped-jumpsuit-trinkets
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorDarkBlue
+  description: A generic dark blue jumpsuit with no rank markings.
+  name: dark blue jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    color: "#2566A8"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+        color: "#2566A8"
+      - state: equipped-jumpsuit-trinkets
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorLightPurple
+  description: A generic light purple jumpsuit with no rank markings.
+  name: light purple jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    color: "#9F70CC"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+        color: "#9F70CC"
+      - state: equipped-jumpsuit-trinkets
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorPurple
+  description: A jumpsuit adorned in a greedy purple.
+  name: purple jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    color: "#A932FF"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+        color: "#A932FF"
+      - state: equipped-jumpsuit-trinkets
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorMaroon
+  description: A generic maroon jumpsuit with no rank markings.
+  name: maroon jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    color: "#D82F6D" #best inbetween i could manage of the old and new colors. this isn't hueshifted so it innately looks worse, but oh well.
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+        color: "#D82F6D"
+      - state: equipped-jumpsuit-trinkets
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorRed
+  description: A garish red jumpsuit with no rank markings.
+  name: red jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    color: "#EB0C07"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+        color: "#EB0C07"
+      - state: equipped-jumpsuit-trinkets
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorPink
+  description: A garish pink jumpsuit with no rank markings.
+  name: pink jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    color: "#D81597"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+        color: "#D81597"
+      - state: equipped-jumpsuit-trinkets
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorLightPink
+  description: A generic light pink jumpsuit with no rank markings.
+  name: light pink jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    color: "#FF7F9F"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+        color: "#FF7F9F"
+      - state: equipped-jumpsuit-greytideTrinkets
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitColorBrown
+  description: A generic brown jumpsuit with no rank markings.
+  name: brown jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    color: "#A17229"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-jumpsuit
+        color: "#A17229"
+      - state: equipped-jumpsuit-trinkets
