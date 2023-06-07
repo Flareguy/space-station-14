@@ -11,6 +11,9 @@
       "name": "icon"
     },
     {
+      "name": "icon-trinkets"
+    },
+    {
       "name": "equipped-jumpsuit",
       "directions": 4
     },
