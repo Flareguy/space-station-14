@@ -7,7 +7,7 @@
         - to: bat
           steps:
             - material: WoodPlank
-              amount: 5
+              amount: 15
               doAfter: 4
     - node: bat
       entity: BaseBallBat

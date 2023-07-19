@@ -2,12 +2,12 @@
   name: baseball bat
   parent: BaseItem
   id: BaseBallBat
-  description: A robust baseball bat.
+  description: You picked the wrong house, fool!
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/baseball_bat.rsi
     state: icon
-  - type: MeleeWeapon
+  - type: MeleeWeapon #15 damage when wielded (7 shots to crit)
     damage:
       types:
         Blunt: 10
@@ -15,7 +15,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 8
+        Blunt: 5
   - type: Item
     size: 80
   - type: Clothing
