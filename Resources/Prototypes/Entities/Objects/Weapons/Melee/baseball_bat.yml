@@ -7,7 +7,7 @@
   - type: Sprite
     sprite: Objects/Weapons/Melee/baseball_bat.rsi
     state: icon
-  - type: MeleeWeapon #15 damage when wielded (7 shots to crit)
+  - type: MeleeWeapon #16 damage when wielded
     damage:
       types:
         Blunt: 10
@@ -15,7 +15,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 5
+        Blunt: 6
   - type: Item
     size: 80
   - type: Clothing
