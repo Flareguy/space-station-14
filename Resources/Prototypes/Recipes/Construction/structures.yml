@@ -53,6 +53,24 @@
     - !type:TileNotBlocked
 
 - type: construction
+  name: fake wall
+  id: HiddenWall
+  graph: Girder
+  startNode: start
+  targetNode: fakeWall
+  category: construction-category-structures
+  description: A hidden door, cleverly disguised as a regular wall. Don't forget to rotate it!
+  icon:
+    sprite: Structures/Walls/solid.rsi
+    state: open
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
   name: reinforced wall
   id: ReinforcedWall
   graph: Girder
@@ -69,6 +87,25 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
+
+- type: construction
+  name: fake reinforced wall
+  id: HiddenWallReinforced
+  graph: Girder
+  startNode: start
+  targetNode: fakeWallReinforced
+  category: construction-category-structures
+  description: A hidden door, cleverly disguised as a reinforced wall. Don't forget to rotate it!
+  icon:
+    sprite: Structures/Walls/solid.rsi
+    state: open
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
 # here
 - type: construction
   name: wood wall

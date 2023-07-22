@@ -1,3 +1,4 @@
+# Tragically, using IconSmooth to make the fake walls blend in seems to completely break the animation. This should be rectified in the future if possible.
 - type: entity
   id: FakeWall
   parent: BaseStructure #Not a parent of BaseMaterialDoor since we want to disable the interaction outline and opening sound
@@ -60,12 +61,19 @@
         acts: ["Destruction"]
     destroySound:
       path: /Audio/Effects/metalbreak.ogg
-  - type: IconSmooth
-    key: walls
-    base: solid
+#  - type: IconSmooth
+#    key: walls
+#    base: solid
   - type: Occluder
     sizeX: 32
     sizeY: 32
   - type: Construction
     graph: Girder
     node: HiddenDoor
+
+- type: entity
+  id: FakeWallReinforced
+  parent: FakeWall
+  suffix: Hidden Door
+  name: reinforced wall
+  description: Keeps the air in and the greytide out.
