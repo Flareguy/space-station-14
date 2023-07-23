@@ -1,4 +1,5 @@
 # Tragically, using IconSmooth to make the fake walls blend in seems to completely break the animation. This should be rectified in the future if possible.
+# Also change the crafting recipe to mirror SS13 if you fix it please (putting the required material on an unanchored girder.)
 - type: entity
   id: FakeWall
   parent: BaseStructure #Not a parent of BaseMaterialDoor since we want to disable the interaction outline and opening sound
@@ -6,8 +7,18 @@
   name: solid wall
   description: Keeps the air in and the greytide out.
   components:
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          MetalBulletImpact
+    soundTypes:
+      Heat:
+        collection:
+          MetalLaserImpact
   - type: Sprite
     sprite: Structures/Walls/solid.rsi
+    drawdepth: Walls
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
@@ -28,6 +39,7 @@
     bumpOpen: false
     clickOpen: true
     canCrush: false
+    weldable: false
     closeTimeOne: 0.6
     closeTimeTwo: 0.2
     openTimeOne: 0.6
@@ -61,15 +73,17 @@
         acts: ["Destruction"]
     destroySound:
       path: /Audio/Effects/metalbreak.ogg
+# Morphs the sprite into a regular wall, not currently used for reasons mentioned above
 #  - type: IconSmooth
 #    key: walls
 #    base: solid
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
   - type: Occluder
-    sizeX: 32
-    sizeY: 32
   - type: Construction
-    graph: Girder
-    node: HiddenDoor
+    graph: FakeWallGraph
+    node: fakeWall
 
 - type: entity
   id: FakeWallReinforced
@@ -77,3 +91,67 @@
   suffix: Hidden Door
   name: reinforced wall
   description: Keeps the air in and the greytide out.
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/FakeWalls/fakewall_rgeneric.rsi #As far as I know the door sprites are hardcoded, so this is nessecarry.
+    drawdepth: Walls
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Construction
+    graph: FakeWallGraph
+    node: fakeWallReinforced
+
+- type: entity
+  id: FakeWallWood
+  parent: FakeWall
+  suffix: Hidden Door
+  name: wood wall
+  description: Keeps the air in and the greytide out.
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/FakeWalls/fakewall_wood.rsi
+    drawdepth: Walls
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    destroySound:
+      path: /Audio/Effects/metalbreak.ogg
+  - type: Construction
+    graph: FakeWallGraph
+    node: fakeWallWood
