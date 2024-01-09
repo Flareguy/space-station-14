@@ -1,59 +1,46 @@
 {
     "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/c34c1b30abf18aa552e19294523924c39e5ea127/icons/turf/wall_masks.dmi and modified.",
     "size": {
         "x": 32,
         "y": 32
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "https://github.com/tgstation/tgstation/blob/9ddb8cf084e292571d4e9c79745db25befbd82fe/icons/turf/walls/shuttle_wall.dmi",
     "states": [
         {
-            "name": "swall0"
+            "name": "full"
         },
         {
-            "name": "swall1"
+            "name": "shuttle0",
+            "directions": 4
         },
         {
-            "name": "swall2"
+            "name": "shuttle1",
+            "directions": 4
         },
         {
-            "name": "swall3"
+            "name": "shuttle2",
+            "directions": 4
         },
         {
-            "name": "swall4"
+            "name": "shuttle3",
+            "directions": 4
         },
         {
-            "name": "swall5"
+            "name": "shuttle4",
+            "directions": 4
         },
         {
-            "name": "swall6"
+            "name": "shuttle5",
+            "directions": 4
         },
         {
-            "name": "swall7"
+            "name": "shuttle6",
+            "directions": 4
         },
         {
-            "name": "swall8"
-        },
-        {
-            "name": "swall9"
-        },
-        {
-            "name": "swall10"
-        },
-        {
-            "name": "swall11"
-        },
-        {
-            "name": "swall12"
-        },
-        {
-            "name": "swall13"
-        },
-        {
-            "name": "swall14"
-        },
-        {
-            "name": "swall15"
-        }    
+            "name": "shuttle7",
+            "directions": 4
+        }
     ]
 }
