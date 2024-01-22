@@ -1,0 +1,49 @@
+﻿- type: body
+  id: Rockman
+  name: rockman
+  root: torso
+  slots:
+    head:
+      part: HeadRockman
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoRockman
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      organs:
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+    right arm:
+      part: RightArmRockman
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmRockman
+      connections:
+      - left hand
+    right hand:
+      part: RightHandRockman
+    left hand:
+      part: LeftHandRockman
+    right leg:
+      part: RightLegRockman
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegRockman
+      connections:
+      - left foot
+    right foot:
+      part: RightFootRockman
+    left foot:
+      part: LeftFootRockman

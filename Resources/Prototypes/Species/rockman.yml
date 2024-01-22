@@ -1,0 +1,117 @@
+- type: species
+  id: Rockman
+  name: species-name-rockman
+  roundStart: true
+  prototype: MobRockman
+  sprites: MobRockmanSprites
+  markingLimits: MobHumanMarkingLimits
+  dollPrototype: MobRockmanDummy
+  skinColoration: TintedHues
+  defaultSkinTone: "#aaaaaa"
+
+- type: speciesBaseSprites
+  id: MobRockmanSprites
+  sprites:
+    Head: MobRockmanHead
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Chest: MobRockmanTorso
+    Eyes: MobRockmanEyes
+    LArm: MobRockmanLArm
+    RArm: MobRockmanRArm
+    LHand: MobRockmanLHand
+    RHand: MobRockmanRHand
+    LLeg: MobRockmanLLeg
+    RLeg: MobRockmanRLeg
+    LFoot: MobRockmanLFoot
+    RFoot: MobRockmanRFoot
+
+- type: humanoidBaseSprite
+  id: MobRockmanEyes
+  baseSprite:
+    sprite: Mobs/Customization/eyes.rsi
+    state: eyes
+
+- type: humanoidBaseSprite
+  id: MobRockmanHead
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobRockmanHeadMale
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobRockmanHeadFemale
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobRockmanTorso
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobRockmanTorsoMale
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobRockmanTorsoFemale
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobRockmanLLeg
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobRockmanLHand
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobRockmanLArm
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobRockmanLFoot
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobRockmanRLeg
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobRockmanRHand
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobRockmanRArm
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobRockmanRFoot
+  baseSprite:
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: r_foot

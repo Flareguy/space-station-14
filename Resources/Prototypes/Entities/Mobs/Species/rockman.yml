@@ -1,0 +1,55 @@
+- type: entity
+  save: false
+  name: Urist McStone
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobRockman
+  abstract: true
+  components:
+  - type: Hunger
+    starvationDamage:
+      types:
+        Cold: 0.5
+        Bloodloss: 0.5
+  - type: Thirst
+  - type: Icon
+    sprite: Mobs/Species/Rockman/parts.rsi
+    state: full
+  - type: DamageVisuals
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#7F7F7F"
+  - type: Body
+    prototype: Rockman
+    requiredLegs: 2
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 400 #weighs more than both diona & humans because ROCK
+        restitution: 0.0
+        mask:
+          - MobMask
+        layer:
+          - MobLayer
+  - type: Vocal
+    sounds:
+      Male: UnisexDwarf
+      Female: FemaleDwarf
+      Unsexed: UnisexDwarf
+  - type: ReplacementAccent
+    accent: dwarf
+  - type: Speech
+    speechSounds: Bass
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobRockmanDummy
+  noSpawn: true
