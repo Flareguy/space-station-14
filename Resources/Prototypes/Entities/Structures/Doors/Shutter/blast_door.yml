@@ -27,7 +27,7 @@
     resistance: 8
   - type: Damageable
     damageContainer: StructuralInorganic
-    damageModifierSet: StrongMetallic
+    damageModifierSet: StructuralMetallic #significantly stronger then shutters & airlocks due to their high-security nature
   - type: ContainerFill
     containers:
       board: [ DoorElectronics ]

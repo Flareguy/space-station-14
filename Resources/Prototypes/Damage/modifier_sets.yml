@@ -16,26 +16,25 @@
     Slash: 0.5
     Piercing: 0.5
     Shock: 1.2
-    Structural: 0.25
+    Structural: 0.5
   flatReductions:
-    Blunt: 10
-    Slash: 10
-    Piercing: 10
-    Heat: 10
-    Structural: 10
+    Blunt: 25
+    Slash: 25
+    Piercing: 25
+    Heat: 25
+    Structural: 40
 
 - type: damageModifierSet
   id: StructuralMetallic
   coefficients:
     Shock: 1.2
     Heat: 1.2
-    Structural: 0.5
   flatReductions:
-    Blunt: 10
-    Slash: 10
-    Piercing: 10
-    Heat: 10
-    Structural: 10
+    Blunt: 25
+    Slash: 25
+    Piercing: 25
+    Heat: 25
+    Structural: 40
 
 - type: damageModifierSet
   id: Rock
@@ -52,9 +51,12 @@
   id: PerforatedMetallic
   coefficients:
     Blunt: 2
+    Slash: 0.6
     Piercing: 0.2
-    Shock: 0.6
+    Shock: 1.2
   flatReductions:
+    Blunt: 5
+    Heat: 5
     Piercing: 10
 
 # for fragile electronics like consoles or shuttle engines.
@@ -85,9 +87,9 @@
     Piercing: 0.7
     Shock: 1.2
   flatReductions:
-    Blunt: 10
-    Slash: 10
-    Piercing: 10
+    Blunt: 14
+    Slash: 15
+    Piercing: 15
     Shock: 10
     Heat: 10
 
@@ -129,7 +131,7 @@
     Slash: 5
     Piercing: 5
     Heat: 5
-    Structural: 10
+    Structural: 12.5
 
 - type: damageModifierSet
   id: Wood
